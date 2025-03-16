@@ -2,19 +2,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
 }
 
 header {
-    background: #f4f4f4;
+    background: #FFFFFF;
     color: #162964;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 
-header img {
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
     height: 50px;
     margin-left: 20px;
 }
@@ -34,31 +41,33 @@ nav ul li a {
     color: #162964;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
-/* Social Media Sidebar */
-.sidebar {
+.social-sidebar {
     position: fixed;
-    right: 0;
+    right: 10px; 
     top: 50%;
     transform: translateY(-50%);
-    background: #dcdada;
+    background: #fff;
     padding: 10px;
     border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar a {
+.social-sidebar a {
     display: block;
-    color: #F5F5F5;
+    color: #162964;
     text-decoration: none;
     margin: 10px 0;
     font-size: 20px;
+    padding: 5px;
+    text-align: center;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.social-icon img {
+    width: 25px;
+    height: 25px;
 }
-
