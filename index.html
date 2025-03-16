@@ -5,45 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Ultra Mobile</title>
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Ultra Mobile Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">My Cart</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header with logo and navigation -->
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Ultra Mobile Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">My Cart</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Social Media Sidebar -->
-    <div class="sidebar">
-        <a href="https://facebook.com" title="Facebook">
-            <img src="assets/facebook.png" alt="Facebook Logo" width="30">
-        </a>
-        <a href="https://twitter.com" title="Twitter">
-            <img src="assets/twitter.png" alt="Twitter Logo" width="30">
-        </a>
-        <a href="https://instagram.com" title="Instagram">
-            <img src="assets/instagram.png" alt="Instagram Logo" width="30">
-        </a>
-    </div>
-    <main>
-        <section>
-            <h1>Welcome to Ultra Mobile</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        <section>
-            <h2>Our Top Brands</h2>
-            <div>
-                <span>Huawei</span>
-                <span>Apple</span>
-                <span>HONOR</span>
+        <!-- Hero section with slider -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="assets/home_page.png" alt="Smartphone">
+                    <div class="slide-text">
+                        <p>Lorem ipsum dolor sit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div>
+                <!-- Slider navigation arrows -->
+                <button class="arrow prev-arrow">&lt;</button>
+                <button class="arrow next-arrow">&gt;</button>
             </div>
         </section>
-    </main>
 
+        <!-- Brands section -->
+        <section class="brands-section">
+            <h2>Our Top Brands</h2>
+            <div class="brands-grid">
+                <!-- Row 1 -->
+                <div class="brand-card">
+                    <img src="assets/huawei.png" alt="Huawei">
+                    <span>Huawei</span>
+                </div>
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+                <div class="brand-card-asus">
+                    <img src="assets/asus.png" alt="Asus">
+                </div>
+                <div class="brand-card-honor">
+                    <img src="assets/honor.png" alt="Honor">
+                </div>
+
+                <!-- Row 2 -->
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+                <div class="brand-card-asus">
+                    <img src="assets/asus.png" alt="Asus">
+                </div>
+                <div class="brand-card-asus">
+                    <img src="assets/asus.png" alt="Asus">
+                </div>
+
+                <!-- Row 3 -->
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+                <div class="brand-card-apple">
+                    <img src="assets/apple.png" alt="Apple">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" class="social-icon chat-icon">
+            <img src="assets/instagram.png" alt="Imstagram">
+        </a>
+        <a href="https://facebook.com" class="social-icon">
+            <img src="assets/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com" class="social-icon">
+            <img src="assets/twitter.png" alt="Twitter">
+        </a>
+    </div>
 </body>
 </html>
